@@ -1,0 +1,26 @@
+{
+  "name": "cypress-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-dashboard-run": "npx cypress run --record --key=ed60b1c6-39f7-403d-8bfe-064329fafb9e"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.6.5",
+    "cypress-downloadfile": "^1.2.3",
+    "jsonpath": "^1.1.1"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mysql": "^2.18.1",
+    "node-xlsx": "^0.23.0"
+  }
+}

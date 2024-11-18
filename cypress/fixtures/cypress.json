@@ -1,0 +1,10 @@
+{
+    "baseUrl": "https://reqres.in/api",
+    "env1":{
+        "search":"TechieQA"
+    },
+    "chromeWebSecurity":false
+
+   
+   
+}
