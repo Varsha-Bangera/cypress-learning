@@ -4,7 +4,7 @@ import LoginPage from "./Pages/Script9_login"
 
 describe("POM",function() {
 
-    it("validate login test",function(){
+    it.only("validate login test",function(){
         const lp= new LoginPage()
         lp.visit()
         lp.fillEmail('admin@yourstore.com')

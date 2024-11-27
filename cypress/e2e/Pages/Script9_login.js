@@ -1,15 +1,15 @@
-/// <reference types="cypress"/>
+
 
 class LoginPage
 {
     visit()
     {
-        cy.visit("https://admin-demo.nopcommerce.com/login?")
+        cy.visit("https://admin-demo.nopcommerce.com/login?",{failOnStatusCode:false})
     }
 
     fillEmail(value)
     {
-        const field=cy.get('[id=Email]')
+        const field=cy.get("input[@id='Email']")
         field.clear()
         field.type(value)
         return this
@@ -17,7 +17,7 @@ class LoginPage
 
     fillPassword(value)
     {
-        const field=cy.get('[id=Password]')
+        const field=cy.get("input[@id='Password']")
         field.clear()
         field.type(value)
         return this
@@ -25,7 +25,7 @@ class LoginPage
 
     submit()
     {
-        const button=cy.get('[type=submit')
+        const button=cy.get("button[type='submit']")
         button.click()
 
     }

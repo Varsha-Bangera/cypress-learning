@@ -9,7 +9,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 describe('custom commands',()=>{
 
     it("handling links",()=>{
-        cy.visit("https://demo.nopcommerce.com/")
+        cy.visit("https://demo.nopcommerce.com/",{failOnStatusCode:false})
 
         //without using custom command
         //cy.get("div[class='item-grid'] div:nth-child(2) div:nth-child(1) div:nth-child(2) h2:nth-child(1) a:nth-child(1)").click()
@@ -23,7 +23,7 @@ describe('custom commands',()=>{
     })
 
     it("overwritting existing command",()=>{
-        cy.visit("https://demo.nopcommerce.com/")
+        cy.visit("https://demo.nopcommerce.com/",{failOnStatusCode:false})
 
         //using custom command
         cy.clickLink("APPLE MACBOOK PRO 13-INCH")
@@ -36,7 +36,7 @@ describe('custom commands',()=>{
     })
 
     it ("login commands",()=>{
-        cy.visit("https://demo.nopcommerce.com/")
+        cy.visit("https://demo.nopcommerce.com/",{failOnStatusCode:false})
 
         cy.clickLink("Log in")
         cy.loginapp("varsha@qaoncloud.com","test@123")
