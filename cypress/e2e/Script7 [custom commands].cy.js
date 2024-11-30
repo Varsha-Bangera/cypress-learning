@@ -31,7 +31,7 @@ describe('custom commands',()=>{
         //cy.contains("Apple MacBook Pro 13-inch").click()
         cy.get("div[class='product-name'] h1").should('have.text','Apple MacBook Pro 13-inch')
         //cy.wait(5000)
-        //cy.get('a[href="/apple-macbook-pro-13-inch"]').eq(0).click()
+        ////cy.get('a[href="/apple-macbook-pro-13-inch"]').eq(0).click()
 
     })
 
