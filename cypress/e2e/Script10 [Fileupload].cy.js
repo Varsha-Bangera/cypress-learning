@@ -5,5 +5,4 @@ describe('File Upload Test',()=>{
         cy.get('[name="qqfile"]').attachFile(image)
     })
 })
-//
-//
+
