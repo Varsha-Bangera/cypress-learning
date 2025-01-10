@@ -77,5 +77,13 @@ Cypress.Commands.add("read",({file, sheet}) => {
    return rows
 })
 
+Cypress.Commands.add("logincarlyle",(email, password)=>{
+   
+   cy.get('#username').should('be.visible').should('be.enabled').clear().type(email)
+   cy.get('#password').should('be.visible').should('be.enabled').clear().type(password)
+   cy.get(':nth-child(4) > .btn').click()
+
+})
+
 
 
